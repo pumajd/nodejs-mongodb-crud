@@ -14,8 +14,8 @@ push:
         registry: https://index.docker.io/v1/
         cmd: node pipeline/source/app.js
         
- restart-occs:
-   steps:
+restart-occs:
+  steps:
     - peternagy/oracle-occs-container-util:
         occs_user: $OCCS_USERNAME
         occs_password: $OCCS_PASSWORD
